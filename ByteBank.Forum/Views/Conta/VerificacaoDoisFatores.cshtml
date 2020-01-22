@@ -1,0 +1,18 @@
+﻿@model ByteBank.Forum.ViewModels.ContaVerificacaoDoisFatoresViewModel
+
+@{
+    ViewBag.Title = "VerificacaoDoisFatores";
+}
+
+<h2>Verificação de SMS</h2>
+
+@Html.ValidationSummary()
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    @Html.EditorForModel()
+        
+    <input type="submit" value="Enviar" />
+}
